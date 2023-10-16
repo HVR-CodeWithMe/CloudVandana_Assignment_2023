@@ -16,7 +16,7 @@ This repository contains solutions to a series of programming assignments in Jav
 - **Sort Array in Descending Order**: Perform sorting of an array in descending order.
 
 ### HTML
-- **Basic Calculator**: Create a basic calculator with the functionality of addition, subtraction, multiplication, and division. Reference the provided picture.
+- **Basic Calculator**: Create a basic calculator with the functionality of addition, subtraction, multiplication, and division.
 - **Survey Form**: Build a survey form with fields for First Name, Last Name, Date of Birth, Country (dropdown), Gender (checkbox), Profession, email, and mobile number. All input fields are required for form submission. Two buttons, "Submit" and "Reset," are included. The "Reset" button resets the form, while clicking "Submit" checks all fields for necessary validations. After validation, a popup appears displaying selected values with labels.
 
 ## Getting Started
