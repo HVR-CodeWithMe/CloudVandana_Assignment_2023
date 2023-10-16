@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Survey Form</title>
+  <link rel="stylesheet" type="text/css" href="form.css">
+</head>
+<body>
+  <div class="center">
+    <form id="surveyForm" class="grid-form">
+      <h1 class="form-title">Survey Form</h1> 
+      <div class="form-group">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required>
+        <span class="error" id="firstNameError">This field is required</span>
+      </div>
+
+      <div class="form-group">
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required>
+        <span class="error" id="lastNameError">This field is required</span>
+      </div>
+
+      <div class="form-group">
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+        <span class="error" id="dobError">This field is required</span>
+      </div>
+
+      <div class="form-group">
+        <label for="gender">Gender:</label>
+        <div class="radio-group">
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+        </div>
+        <span class="error" id="genderError">Please select your gender</span>
+    </div>
+    
+
+      <div class="form-group">
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+          <option value="">Select a country</option>
+          <option value="India">India</option>
+          <option value="USA">USA</option>
+          <option value="UK">UK</option>
+          <option value="Other">Other</option>
+        </select>
+        <span class="error" id="countryError">Please select a country</span>
+      </div>
+
+      <div class="form-group">
+        <label for="profession">Profession:</label>
+        <input type="text" id="profession" name="profession" required>
+        <span class="error" id="professionError">This field is required</span>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <span class="error" id="emailError">This field is required</span>
+      </div>
+
+      <div class="form-group">
+        <label for="mobile">Mobile Number:</label>
+        <input type="tel" id="mobile" name="mobile" required>
+        <span class="error" id="mobileError">This field is required</span>
+      </div>
+
+      <div class="clearfix"></div>
+
+      <button type="button" id="submitBtn">Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+  </div>
+
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span class="close" id="closePopup">&times;</span>
+      <h2>Survey Form Submission</h2>
+      <div id="popupContent"></div>
+    </div>
+  </div>
+
+  <script src="form.js"></script>
+</body>
+</html>
